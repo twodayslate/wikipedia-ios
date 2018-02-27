@@ -238,17 +238,17 @@ extension ArticleCollectionViewController: ActionDelegate {
         var actions: [Action] = []
         
         if canSave(at: indexPath) {
-            actions.append(ActionType.save.action(with: self, indexPath: indexPath))
+            actions.append(Action.save(with: self, at: indexPath))
         } else if canUnsave(at: indexPath) {
-            actions.append(ActionType.unsave.action(with: self, indexPath: indexPath))
+            actions.append(Action.unsave(with: self, at: indexPath))
         }
         
         if canShare(at: indexPath) {
-            actions.append(ActionType.share.action(with: self, indexPath: indexPath))
+            actions.append(Action.share(with: self, at: indexPath))
         }
         
         if canDelete(at: indexPath) {
-            actions.append(ActionType.delete.action(with: self, indexPath: indexPath))
+            actions.append(Action.delete(with: self, at: indexPath))
         }
 
         return actions

@@ -415,7 +415,7 @@ extension ReadingListsViewController: ActionDelegate {
     }
     
     func availableActions(at indexPath: IndexPath) -> [Action] {
-        return [ActionType.delete.action(with: self, indexPath: indexPath)]
+        return [Action.delete(with: self, at: indexPath)]
     }
 
 }

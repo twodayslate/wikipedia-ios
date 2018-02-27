@@ -315,10 +315,10 @@ extension ReadingListDetailViewController: ActionDelegate {
         var actions: [Action] = []
 
         if articleURL(at: indexPath) != nil {
-            actions.append(ActionType.share.action(with: self, indexPath: indexPath))
+            actions.append(Action.share(with: self, at: indexPath))
         }
 
-        actions.append(ActionType.delete.action(with: self, indexPath: indexPath))
+        actions.append(Action.delete(with: self, at: indexPath))
         
         return actions
     }
