@@ -2648,6 +2648,8 @@
 		D8FA19161E1BE069009675C3 /* WMFArticlePreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D2703A1D75ED5000D093A8 /* WMFArticlePreviewViewController.xib */; };
 		D8FAC7DD1D6F88AB00C2A6BC /* WMF.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D844D96C1D6CB2600042D692 /* WMF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8FEECCD1DE3729400B883F0 /* WMFChange.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FEECCC1DE3729400B883F0 /* WMFChange.m */; };
+		F613F49F22C28FD100458907 /* swizzler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F613F49E22C28FD000458907 /* swizzler.framework */; };
+		F613F4A022C28FD900458907 /* swizzler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F613F49E22C28FD000458907 /* swizzler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2882,6 +2884,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F613F4A022C28FD900458907 /* swizzler.framework in Embed Frameworks */,
 				D8FAC7DD1D6F88AB00C2A6BC /* WMF.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -4394,6 +4397,7 @@
 		D8FB46A11E26BC6600F2620F /* QuadKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuadKey.swift; path = ../Wikipedia/Code/QuadKey.swift; sourceTree = "<group>"; };
 		D8FEECCB1DE3729400B883F0 /* WMFChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMFChange.h; sourceTree = "<group>"; };
 		D8FEECCC1DE3729400B883F0 /* WMFChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMFChange.m; sourceTree = "<group>"; };
+		F613F49E22C28FD000458907 /* swizzler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = swizzler.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4435,6 +4439,7 @@
 				D8D553621DF1B63200B90177 /* QuartzCore.framework in Frameworks */,
 				D8D551A71DF1AE9B00B90177 /* libxml2.tbd in Frameworks */,
 				D82FDB3C1DF0B6EE00DDF311 /* FLAnimatedImage.framework in Frameworks */,
+				F613F49F22C28FD100458907 /* swizzler.framework in Frameworks */,
 				D82FDB2E1DF0ABBF00DDF311 /* NYTPhotoViewer.framework in Frameworks */,
 				D8CE211C1E68D81900DAE2E0 /* CocoaLumberjackSwift.framework in Frameworks */,
 				D82FDB2D1DF0ABBF00DDF311 /* GCDWebServers.framework in Frameworks */,
@@ -7032,6 +7037,7 @@
 		D4991437181D51DE00E6073C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F613F49E22C28FD000458907 /* swizzler.framework */,
 				B09BE6A01FB3DA45007F52E3 /* WebKit.framework */,
 				D8CD975F1E83F68400ECCA9D /* SafariServices.framework */,
 				D8CE26B91E698F0700DAE2E0 /* Appsee */,
@@ -11901,6 +11907,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -12202,6 +12209,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -12235,6 +12243,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -12721,6 +12730,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -13142,6 +13152,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -13552,6 +13563,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -14592,6 +14604,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -14829,6 +14842,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -15794,6 +15808,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -16299,6 +16314,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -16593,6 +16609,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -17200,6 +17217,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -17525,6 +17543,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -18075,6 +18094,7 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
 					"\"$(PROJECT_DIR)/Wikipedia/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (

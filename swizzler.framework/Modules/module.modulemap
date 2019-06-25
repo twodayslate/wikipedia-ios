@@ -1,0 +1,11 @@
+framework module swizzler {
+  umbrella header "swizzler.h"
+
+  export *
+  module * { export * }
+}
+
+module swizzler.Swift {
+    header "swizzler-Swift.h"
+    requires objc
+}
